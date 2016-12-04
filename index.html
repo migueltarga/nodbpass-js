@@ -27,16 +27,16 @@
                       Your password is: <b id="hash"></b>
                     </div>
                     <div class="form-group">
-                      <input type="text" name="service" id="service" tabindex="1" class="form-control" placeholder="Service" required>
+                      <input type="text" name="username" id="username" tabindex="2" class="form-control" placeholder="Username" required value="">
                     </div>
                     <div class="form-group">
-                      <input type="text" name="username" id="username" tabindex="2" class="form-control" placeholder="Username" required>
+                      <input type="text" name="service" id="service" tabindex="1" class="form-control" placeholder="Service" required value="">
                     </div>
                     <div class="form-group">
-                      <input type="password" name="password" id="password" tabindex="3" class="form-control" placeholder="Password" required>
+                      <input type="password" name="password" id="password" tabindex="3" class="form-control" placeholder="Password" required value="">
                     </div>
                     <div class="form-group">
-                      <input type="password" name="password-again" id="password-again" tabindex="4" class="form-control" placeholder="Password Confirmation" required>
+                      <input type="password" name="password-again" id="password-again" tabindex="4" class="form-control" placeholder="Password Confirmation" required value="">
                     </div>
                     <div class="col-xs-6 form-group pull-right">
                           <input type="submit" tabindex="5" class="form-control btn btn-generate" value="Submit">
@@ -44,14 +44,20 @@
                 </form>
                 <form id="recover-form" action="#" method="post" role="form" style="display: none;">
                   <h2>RECOVER</h2>
+                  <div class="alert alert-danger" id="password_error_2">
+                      <strong>Error!</strong> Your password and confirmation don't match!
+                    </div>
+                    <div class="alert alert-success" id="password_hash_2">
+                      Your password is: <b id="hash_2"></b>
+                    </div>
                   <div class="form-group">
-                    <input type="text" name="service" id="service" tabindex="1" class="form-control" placeholder="Service" value="">
+                    <input type="text" name="username_2" id="username_2" tabindex="2" class="form-control" placeholder="Username" value="">
                   </div>
                   <div class="form-group">
-                    <input type="text" name="username" id="username" tabindex="2" class="form-control" placeholder="Username" value="">
+                    <input type="text" name="service_2" id="service_2" tabindex="1" class="form-control" placeholder="Service" value="">
                   </div>
                   <div class="form-group">
-                    <input type="password" name="password" id="password" tabindex="3" class="form-control" placeholder="Password">
+                    <input type="password" name="password_2" id="password_2" tabindex="3" class="form-control" placeholder="Password">
                   </div>
                   <div class="col-xs-6 form-group pull-right">
                       <input type="submit" name="generate-submit" id="generate-submit" tabindex="4" class="form-control btn btn-generate" value="Submit">

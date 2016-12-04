@@ -224,6 +224,6 @@ box-shadow: none;
 color: #fff;
 background-color: #2D3B55;
 }
-#password_error, #password_hash{
+#password_error, #password_hash,#password_error_2, #password_hash_2{
   display: none;
 }
